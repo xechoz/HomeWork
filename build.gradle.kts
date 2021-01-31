@@ -13,7 +13,7 @@ repositories {
 }
 
 dependencies {
-    testImplementation(kotlin("test-junit"))
+    implementation(kotlin("test-junit"))
 }
 
 tasks.test {
