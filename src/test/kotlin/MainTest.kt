@@ -1,6 +1,5 @@
 import chunzhao.Week_02.*
-import chunzhao.Week_03.search
-import chunzhao.Week_03.search2
+import chunzhao.Week_03.*
 import org.junit.Test
 import kotlin.test.assertEquals
 
@@ -68,5 +67,32 @@ class MainTest {
         assertEquals(-1, search2(array, 0), "-1, 3")
 //        assertEquals(3, search2(array, 7))
 //        assertEquals(5, search2(array, 1))
+    }
+
+    @Test
+    fun maxProfitTest() {
+        assertEquals(maxProfit(intArrayOf(7,1,5,3,6,4)), 7)
+        assertEquals(maxProfit(intArrayOf(3, 2, 1)), 0)
+        assertEquals(maxProfit(intArrayOf(1, 2, 3)), 2)
+    }
+
+    @Test
+    fun subsetsTest() {
+//        assertEquals(listOf(emptyList(), listOf(1), listOf(2), listOf(1, 2)), subsets(intArrayOf(1, 2)).reversed())
+    }
+
+    @Test
+    fun jumpTest() {
+//        assertEquals(2, jump(intArrayOf(2, 1, 3, 1)))
+//        assertEquals(1, jump(intArrayOf(2, 3, 1)))
+        assertEquals(3, jump(intArrayOf(1, 2, 1,1,3)))
+    }
+
+
+    @Test
+    fun letterCombinationsTest() {
+//        assertEquals(listOf(), letterCombinations(""))
+//        assertEquals(listOf("a","b","c"), letterCombinations("2"))
+        assertEquals(listOf("ad","ae","af","bd","be","bf","cd","ce","cf"), letterCombinations("23"))
     }
 }
