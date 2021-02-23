@@ -1,5 +1,6 @@
 import chunzhao.Week_02.*
 import chunzhao.Week_03.*
+import chunzhao.Week_04.numDecodings
 import org.junit.Test
 import kotlin.test.assertEquals
 
@@ -94,5 +95,16 @@ class MainTest {
 //        assertEquals(listOf(), letterCombinations(""))
 //        assertEquals(listOf("a","b","c"), letterCombinations("2"))
         assertEquals(listOf("ad","ae","af","bd","be","bf","cd","ce","cf"), letterCombinations("23"))
+    }
+
+    @Test
+    fun numDecodingsTest() {
+        assertEquals(0, numDecodings(""))
+        assertEquals(0, numDecodings("0"))
+        assertEquals(1, numDecodings("1"))
+        assertEquals(2, numDecodings("12"))
+        assertEquals(0, numDecodings("01"))
+        assertEquals(3, numDecodings("226"))
+        assertEquals(1, numDecodings("10"))
     }
 }
